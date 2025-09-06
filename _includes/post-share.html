@@ -1,0 +1,13 @@
+<div class="post-share">
+  <div class="post-date">{{ site.data.settings.sharing_button_prompt }}</div>
+  <div class="sharing-icons"><i class="fa-solid fa-share-from-square"></i>分享至：
+    <a href="javascript:void(0)"class="wechat"><i class="fa-brands fa-weixin"></i>
+	<div class="image-container">
+        <img src="https://api.sjtu.edu.cn/v1/barcode/qr/1.png?value=https://5geng.com{{ page.url }}" alt="扫码分享">
+    </div>
+	</a>
+	<a href="https://connect.qq.com/widget/shareqq/index.html?url={{ site.github.url }}{{ page.url }}&sharesource=qzone&title={{ page.title }}&pics={{ page.image }}" target="_blank"><i class="fa-brands fa-qq"></i></a>
+    <a href="https://x.com/intent/tweet?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank"><i class="fa-brands fa-weibo"></i></a>
+  </div>
+</div>

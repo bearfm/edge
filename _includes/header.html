@@ -1,0 +1,33 @@
+<header>
+<div class="site-header container">
+  <h1 class="site-title">
+    <a href="{{ site.github.url }}/">{{ site.title }}</a>
+  </h1>
+  <nav class="menu-list">
+	<span class="navdown">
+	  <span>文章 <i class="fa-solid fa-angle-down"></i></span>
+	  <div class="navdown-content">
+	    <p><a href="{{ site.github.url }}/notepad" class="menu-link">随笔</a></p>
+	    <p><a href="{{ site.github.url }}/travelogue" class="menu-link">游记</a></p>
+		<p><a href="{{ site.github.url }}/explore" class="menu-link">探索</a></p>
+	  </div>
+	</span>
+    <a href="{{ site.github.url }}/about" class="menu-link">关于</a>
+	<a href="{{ site.github.url }}/friend" class="menu-link">朋友</a>
+	<a href="search.html" class="menu-link" target="_blank"><i class="fa-solid fa-magnifying-glass"></i></a>
+	<a href="feed.xml" class="menu-link" target="_blank"><i class="fa-solid fa-square-rss"></i></a>
+	<a href="javascript:switchNightMode()" class="menu-link at-night" target="_self"><i class="fa-solid fa-circle-half-stroke"></i></a>
+  </nav>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+    <div class="dropdown-content">
+      {% for item in site.data.settings.menu %}
+        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
+      {% endfor %}
+    </div>
+	<a href="search.html" class="menu-link" target="_blank"><i class="fa-solid fa-magnifying-glass"></i></a>
+	<a href="feed.xml" class="menu-link" target="_blank"><i class="fa-solid fa-square-rss"></i></a>
+	<a href="javascript:switchNightMode()" class="menu-link at-night" target="_self"><i class="fa-solid fa-circle-half-stroke"></i></a>
+  </div>
+</div>
+</header>

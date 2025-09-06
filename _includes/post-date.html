@@ -1,0 +1,10 @@
+<span class="post-date">
+  {{ site.data.settings.post_date_prefix }}
+  {{ page.date | date: "%Y年%m月%d日，" }}
+  作者：
+  {% if page.author %}
+    {{ page.author }}
+  {% else %}
+    {{ site.author }}
+  {% endif %}
+</span>

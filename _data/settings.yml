@@ -1,0 +1,33 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: ''
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: ''
+
+menu:
+- {name: '随笔', url: 'notepad'}
+- {name: '游记',       url: 'travelogue'}
+- {name: '探索',      url: 'explore'}
+- {name: '关于',              url: 'about'}
+- {name: '友链',            url: 'friend'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'fa-brands fa-weixin', link:    'https://www.douban.com/photos/album/1998035767/'}
+- {icon: 'fa-brands fa-qq', link:   'https://www.facebook.com/paululele'}
+- {icon: 'fa-brands fa-telegram', link:  'https://t.me/fm987'}
+- {icon: 'fa-solid fa-envelope', link:   'mailto:hello@paulle.ca'}
+- {icon: 'fa-solid fa-rss-square', link: 'feed.xml'}
+
+# Customize site text
+pagination:
+  next_page: '往后翻 ❯'
+  previous_page: '❮ 往前翻'
+
+sharing_button_prompt: '如果您觉得不错，请帮忙分享，让更多人看到：'
+
+related_posts: '猜你喜欢...'
+
+post_date_prefix: '本文写于'

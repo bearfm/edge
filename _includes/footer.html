@@ -1,0 +1,56 @@
+<footer class="footer">
+  <a href="javascript:void(0)" class="menu-link wechat"><i class="fa-brands fa-weixin"></i>
+    <div class="image-container">
+        <img src="https://fm.bear.hi.cn/files/wechat.jpg" alt="微信二维码">
+    </div>
+  </a>
+  <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=5592112&website=plumb.blog" class="menu-link" target="_blank"><i class="fa-brands fa-qq"></i></a>
+  <a href="https://t.me/fm876" class="menu-link" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+  <a href="javascript:location='mailto:\u0068\u0065\u006c\u006c\u006f\u0040\u0035\u0067\u0065\u006e\u0067\u002e\u0063\u006f\u006d';void 0" class="menu-link"><i class="fa-solid fa-envelope"></i></a>
+  <a href="feed.xml" class="menu-link" target="_blank"><i class="fa-solid fa-rss-square"></i></a>
+  <div class="footer-description"><a href="{{ site.github.url }}/">2025 ️<i class="fa-regular fa-copyright"></i> {{ site.title }} | {{ site.description }}</a></div>
+</footer>
+<script src="https://s4.zstatic.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+      $(document).ready(function() {
+      $("p img").each(function() {
+           var strA = "<a data-fancybox='gallery' ref='gallery1' href='" + this.src + "'></a>";
+           $(this).wrapAll(strA);
+       });
+
+      $('[data-fancybox="gallery"]').fancybox();
+      });
+</script>
+<script type="text/javascript">
+function switchNightMode(){
+    var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+    if(night == '0'){
+        document.body.classList.add('night');
+        document.cookie = "night=1;path=/"
+        console.log('夜间模式开启');
+    }else{
+        document.body.classList.remove('night');
+        document.cookie = "night=0;path=/"
+        console.log('夜间模式关闭');
+    }
+} (function(){
+    if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === ''){
+        if(new Date().getHours() > 21 || new Date().getHours() < 5){
+            document.body.classList.add('night');
+            document.cookie = "night=1;path=/";
+            console.log('夜间模式自动开启');
+        }else{
+            document.body.classList.remove('night');
+            document.cookie = "night=0;path=/";
+            console.log('夜间模式自动关闭');
+        }
+    }else{
+        var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+        if(night == '0'){
+            document.body.classList.remove('night');
+        }else if(night == '1'){
+            document.body.classList.add('night');
+        }
+    }
+})();</script>

@@ -1,0 +1,30 @@
+<head>
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} | 念念不忘，生生不息…
+    {% else %}
+      {{ page.title }} | {{ site.title }}
+    {% endif %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://fm.bear.hi.cn/files/v5/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://fm.bear.hi.cn/files/v5/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://fm.bear.hi.cn/files/v5/favicon-16x16.png">
+  <link rel="manifest" href="https://fm.bear.hi.cn/files/v5/site.webmanifest">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/syntax.css">
+  <!-- Use Atom -->
+  {% feed_meta %}
+  <!-- RSS-v2.0
+  <link href="{{ site.github.url }}/rss-feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} | {{ site.description }}"/>
+  //-->
+  <link rel="stylesheet" href="https://fonts.font.im/css?family=Roboto|Source+Code+Pro" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" async
+    src="https://s4.zstatic.net/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </script>
+  <!-- Use Jekyll SEO plugin -->
+  {% seo %}
+</head>

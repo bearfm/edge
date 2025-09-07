@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 这是一部关于行走、发现与汲取的个人志
-permalink: /about
+permalink: /about/
 image: https://fm.bear.hi.cn/blog/2025/07/3571411207.jpeg
 ---
 
